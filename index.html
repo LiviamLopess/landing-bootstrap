@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Coloquei meu CSS depois do Bootstrap para que minha regra tenha prioridade em caso de empate. -->
+    <style>
+  .btn-cardapio {
+    background-color: #6F4E37;
+    border-color: #6F4E37;
+  }
+</style>
 
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Cafeteria Dona Maria</a>
+  <div class="container-fluid" style="background-color: rgba(201, 152, 97, 0.911);">
+    <a class="navbar-brand" href="#">CAFETERIA DONA MARIA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,15 +36,15 @@
           <a class="nav-link disabled" aria-disabled="true">História</a>
         </li>
       </ul>
-      <form class="d-flex" role="Pesquise">
+      <form class="d-flex" role="Pesquise" style="background-color: rgba(201, 152, 97, 0.911);">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        <button class="btn btn-outline-success" type="submit" style="color: black;">Pesquisar</button>
       </form>
     </div>
   </div>
 </nav>
 
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
+<div class="alert alert-dismissible fade show bg-body text-body" data-bs-theme="dark" role="alert">
   <strong>PROMOÇÃO!</strong> Compre 1 café expresso e ganhe 50% de desconto no segundo!
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
@@ -49,7 +56,7 @@
   <figcaption class="blockquote-footer">
     <p>Com um café a vida fica mais alegre!</p>
   </figcaption>
-  <button type="button" class="btn btn-outline-warning">Ver cardápio</button>
+  <button type="button" class="btn btn-primary btn-cardapio">Ver cardápio</button>
 </figure>
 <div class="container text-center">
   <!--Usei essa opção md-4 para que se for maior que 768px fique um do lado do outro, se for menor que 768px fique um embaixo do outro-->
@@ -60,6 +67,7 @@
        <div class="card-body">
       <h3>Café Expresso</h3>
       <p> “Eu não sou viciado em café, apenas preciso dele para sobreviver.”</p>
+      <!--o Bootstrap definiu 50 propriedades de CSS aproximadamente-->
       <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
       </div>
     </div>
@@ -83,8 +91,10 @@
       <h3>Chocolate Quente</h3>
       <p>“O chocolate quente é a melhor forma de aquecer o coração.”</p>
       <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
